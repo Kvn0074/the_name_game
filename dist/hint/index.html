@@ -10,9 +10,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;400;500&display=swap" rel="stylesheet">
 
-        <title>The Name Game | {{pageTitle}}</title>
+        <title>The Name Game | Hint</title>
 
-        <link rel="stylesheet" href="{{'/assets/css/default.css' | url }}">
+        <link rel="stylesheet" href="/assets/css/default.css">
     </head>
 
     <body>
@@ -20,13 +20,17 @@
 
             <div class="stuff-container">
 
-                {{ content | safe }}
+                
+<div class="the-hint">
+    <div>
+    </div>
+</div>
 
             </div>
 
         </div>
         
-        <script src="{{'/assets/js/script.js' | url }}"></script>   
+        <script src="/assets/js/script.js"></script>   
     </body>
 
 </html>

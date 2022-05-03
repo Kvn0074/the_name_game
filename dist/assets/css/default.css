@@ -1,0 +1,13 @@
+:root {
+   --pastGreen  : #99ffcc;
+   --pastBlue   : #99ccff;
+   --lightBlue  : #99ffff;
+   --pastOrange : #ffcc99; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Smooch Sans', sans-serif;
+    letter-spacing: 10px;
+}

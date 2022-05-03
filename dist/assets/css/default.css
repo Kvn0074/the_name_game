@@ -27,6 +27,12 @@ body {
     min-width: 320px;
 }
 
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+
 /*================================================================================
 =============| H O M E |==========================================================
 ================================================================================*/
@@ -75,4 +81,16 @@ body {
     font-size: 0.9em;
     letter-spacing: 4px;
     font-weight: 100;
+}
+
+.the-hint-complete {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.hint {
+    font-size: 2em;
+    font-weight: 300;
 }

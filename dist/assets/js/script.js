@@ -17,8 +17,8 @@ function startInt(){
 
 function disappear(){
     if(count > 4){
-           xFunction();
            stopInt();
+           setTimeout(xFunction,2000);
     } else {
         console.log('disparation ' + count);
         hints[count].className = "disappear";
@@ -37,7 +37,7 @@ function stopInt(){
     clearInterval(interval); 
 }
 
-setTimeout(startInt,5000);
+setTimeout(startInt,3000);
 
 
 

@@ -148,6 +148,7 @@ a {
     width: 270px;
     margin-bottom: 50px;
     border: 1px var(--fontColor) solid;
+    border-radius: 0;
     padding: 15px;
 }
 

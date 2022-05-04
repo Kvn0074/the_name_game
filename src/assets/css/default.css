@@ -90,7 +90,14 @@ a {
     margin-top: 130px;
 }
 
-.hint {
+.visible {
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
 }
+
+.disappear {
+    opacity: 0;
+    font-size: 2em;
+    font-weight: 400;
+    transition: 2.5s;
+    }

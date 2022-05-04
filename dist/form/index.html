@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
 
-        <title>The Name Game | Home</title>
+        <title>The Name Game | Answer</title>
 
         <link rel="stylesheet" href="/assets/css/default.css">
     </head>
@@ -21,26 +21,32 @@
             <div class="stuff-container">
 
                 
+<form name="contact" method="POST" data-netlify="true" class="the-form">
 
-<h1 class="title"> The Name Game</h1>
+  <p>
+    <label class="form-label name-label">Votre Nom:<br>
+        <input class="form-input name-input" type="text" name="name" />
+    </label>
+  </p>
 
-<a href="/hint/">
-    <div class="button indice">
+  <p>
+    <label class="form-label answer-label">Votre Proposition:<br> 
+        <input class="form-input answer-input" type="text" name="name" />
+    </label> 
+  </p>
+
+  <p>
+    <button class="button send-button" type="submit">Envoyez</button>
+  </p>
+</form>
+
+<a href="/">
+    <div class="button back-home">
         <div class="btn-ctn">
-            <h2 class="btn-txt txt-ind">Voir l'indice</h2>
-            <h3 class="btn-sub-txt sub-txt-ind">[le temps n'est pas infini]</h3>
+            <h2 class="btn-txt txt-back">Retour Accueil</h2>
         </div>
     </div>
 </a>
-
-<a href="/form/">
-    <div class="button propo">
-        <div class="btn-ctn">
-            <h2 class="btn-txt txt-prop">Faire une proposition</h2>
-        </div>
-    </div>
-</a>
-
 
             </div>
 

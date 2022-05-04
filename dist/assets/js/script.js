@@ -18,7 +18,8 @@ function startInt(){
 function disappear(){
     if(count > 4){
            stopInt();
-           setTimeout(xFunction,2000);
+           setTimeout(xFunction,1500);
+           setTimeout(redirectTo,1800);
     } else {
         console.log('disparation ' + count);
         hints[count].className = "disappear";
@@ -37,7 +38,11 @@ function stopInt(){
     clearInterval(interval); 
 }
 
-setTimeout(startInt,3000);
+function redirectTo(){
+    window.location.href = "/form/";
+}
+
+setTimeout(startInt,2500);
 
 
 

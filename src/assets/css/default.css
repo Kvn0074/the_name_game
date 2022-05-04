@@ -3,10 +3,22 @@
 ================================================================================*/
 
 :root {
-   --pastGreen  : #99ffcc;
-   --pastBlue   : #99ccff;
-   --lightBlue  : #99ffff;
-   --pastOrange : #ffcc99; 
+   --fontColor    : white;  
+   --backColor    : black;
+   --fontFamilly  : 'Cabin Sketch', cursive;
+   --letterSpacer : 10px;
+   --titleSize    : 2em;
+   --regularSize  : 1.3em;
+   --smallSize    : 0.7em;
+}
+
+/*================================================================================
+=============| A N I M A T I O N |================================================
+================================================================================*/
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 /*================================================================================
@@ -17,20 +29,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Smooch Sans', sans-serif;
-    letter-spacing: 10px;
+    background-color: var(--backColor);
+    color: var(--fontColor);
+    font-family: var(--fontFamilly);
+    letter-spacing: var(--letterSpacer);
     min-width: 320px;
 }
 
 a {
     text-decoration: none;
     text-transform: none;
-    color: white;
+    color: var(--fontColor);
 }
 
 /*================================================================================
@@ -40,6 +54,7 @@ a {
     position: relative;
     height: 100vh;
     width: 100%;
+    animation: fadeIn linear 2s;
 }
 .stuff-container {
     width: 295px;
@@ -54,6 +69,7 @@ a {
 
 .title {
     margin-bottom: 70px;
+    font-size: var(--titleSize);
 }
 
 /*================================================================================
@@ -65,8 +81,17 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    border: 1px white solid;
+    border: 1px var(--fontColor) solid;
     cursor: pointer;
+}
+
+.send-button {
+    background: none;
+    color: var(--fontColor);
+    font-family: var(--fontFamilly);
+    letter-spacing: var(--letterSpacer);
+    font-size: var(--regularSize);
+    padding: 15px;
 }
 
 .btn-ctn {
@@ -74,14 +99,18 @@ a {
 }
 
 .btn-txt {
-    font-size: 1.1em;
+    font-size: var(--regularSize);
 }
 
 .btn-sub-txt {
-    font-size: 0.9em;
+    font-size: var(--smallSize);
     letter-spacing: 4px;
     font-weight: 100;
 }
+
+/*================================================================================
+=============| H I N T |==========================================================
+================================================================================*/
 
 .the-hint-complete {
     display: flex;
@@ -91,13 +120,37 @@ a {
 }
 
 .visible {
-    font-size: 2em;
+    font-size: var(--titleSize);
     font-weight: 400;
 }
 
 .disappear {
     opacity: 0;
-    font-size: 2em;
+    font-size: var(--titleSize);
     font-weight: 400;
     transition: 2.5s;
-    }
+}
+
+/*================================================================================
+=============| F O R M U L A R |==================================================
+================================================================================*/
+
+.form-label {
+    font-size: var(--regularSize);
+}
+
+.form-input {
+    background: none;
+    color: var(--fontColor);
+    font-family: var(--fontFamilly);
+    letter-spacing: var(--letterSpacer);
+    font-size: var(--regularSize);
+    width: 270px;
+    margin-bottom: 50px;
+    border: 1px var(--fontColor) solid;
+    padding: 15px;
+}
+
+.name-input {
+    margin-bottom: 25px;
+}

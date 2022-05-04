@@ -3,17 +3,17 @@ layout: layout.njk
 pageTitle: Answer
 ---
 
-<form name="contact" method="POST" data-netlify="true" class="the-form">
+<form name="contact" method="POST" data-netlify="true" action="/success/" class="the-form">
 
   <p>
     <label class="form-label name-label">Votre Nom:<br>
-        <input class="form-input name-input" type="text" name="name" />
+        <input class="form-input name-input" type="text" name="name" required="required"/>
     </label>
   </p>
 
   <p>
     <label class="form-label answer-label">Votre Proposition:<br> 
-        <input class="form-input answer-input" type="text" name="name" />
+        <input class="form-input answer-input" type="text" name="proposition" required="required"/>
     </label> 
   </p>
 

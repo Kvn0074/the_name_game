@@ -3,13 +3,15 @@
 ================================================================================*/
 
 :root {
-   --fontColor    : white;  
-   --backColor    : black;
-   --fontFamilly  : 'Cabin Sketch', cursive;
-   --letterSpacer : 10px;
-   --titleSize    : 2em;
-   --regularSize  : 1.3em;
-   --smallSize    : 0.7em;
+   --fontColor     : white;  
+   --backColor     : black;
+   --fontFamilly   : 'Cabin Sketch', cursive;
+   --titleSpacer   : 10px;
+   --regularSpacer : 5px;
+   --smallSpacer   : 3px;
+   --titleSize     : 2em;
+   --regularSize   : 1.3em;
+   --smallSize     : 0.7em;
 }
 
 /*================================================================================
@@ -37,7 +39,7 @@ body {
     background-color: var(--backColor);
     color: var(--fontColor);
     font-family: var(--fontFamilly);
-    letter-spacing: var(--letterSpacer);
+    letter-spacing: var(--regularSpacer);
     min-width: 320px;
 }
 
@@ -57,8 +59,8 @@ a {
     animation: fadeIn linear 2s;
 }
 .stuff-container {
-    width: 295px;
-    height: 420px;
+    width: 310px;
+    height: 450px;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -68,8 +70,9 @@ a {
 }
 
 .title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
 }
 
 /*================================================================================
@@ -104,8 +107,33 @@ a {
 
 .btn-sub-txt {
     font-size: var(--smallSize);
-    letter-spacing: 4px;
+    letter-spacing: var(--smallSpacer);
     font-weight: 100;
+}
+
+/*================================================================================
+=============| C O U N T D O W N |================================================
+================================================================================*/
+.countDown-announcer {
+    width: 100%;
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.countDown-complete {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.countDown-part {
+    width: 60px;
+}
+
+.count-data {
+    font-size: var(--regularSize);
+    letter-spacing: var(--smallSpacer);
 }
 
 /*================================================================================
@@ -121,12 +149,14 @@ a {
 
 .visible {
     font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
     font-weight: 400;
 }
 
 .disappear {
     opacity: 0;
     font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
     font-weight: 400;
     transition: 2.5s;
 }
@@ -163,10 +193,12 @@ a {
 
 .thank-txt {
    margin-bottom: 25px;
-   font-size: 1.1em;
+   font-size: var(--regularSize);
 }
 
 .release-date{
     font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
     margin-bottom: 30px;
 }
+

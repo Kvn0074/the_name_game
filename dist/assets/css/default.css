@@ -80,7 +80,7 @@ a {
 ================================================================================*/
 
 .button {
-    width: 270px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -159,6 +159,25 @@ a {
     letter-spacing: var(--titleSpacer);
     font-weight: 400;
     transition: 2.5s;
+}
+
+/*================================================================================
+=============| H I N T / L V L |==================================================
+================================================================================*/
+
+.center-contain-lvl-01{
+    margin-top: -230px;
+}
+
+.lvl-title {
+    font-size: var(--regularSize);
+    letter-spacing: var(--regularSpacer);
+    margin-bottom: 50px;
+}
+
+.krypto {
+    width: 300px;
+    margin-bottom: 50px;
 }
 
 /*================================================================================

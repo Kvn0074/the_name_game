@@ -56,7 +56,7 @@ a {
     position: relative;
     height: 100vh;
     width: 100%;
-    animation: fadeIn linear 2s;
+    animation: fadeIn linear 3s;
 }
 .stuff-container {
     width: 310px;
@@ -165,8 +165,11 @@ a {
 =============| H I N T / L V L |==================================================
 ================================================================================*/
 
-.center-contain-lvl-01{
+.center-contain-lvl-01 {
     margin-top: -230px;
+}
+.center-contain-lvl-02 {
+    margin-top: -100px;
 }
 
 .lvl-title {
@@ -175,7 +178,23 @@ a {
     margin-bottom: 50px;
 }
 
+.more-or-less {
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lvl-02-try-counter {
+    font-size: var(--smallSize);
+    margin-top: 15px;
+}
+
 .krypto {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.enigma {
     width: 300px;
     margin-bottom: 50px;
 }

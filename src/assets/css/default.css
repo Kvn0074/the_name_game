@@ -12,6 +12,7 @@
    --titleSize     : 2em;
    --regularSize   : 1.3em;
    --smallSize     : 0.7em;
+   --alertColor    : #ff30f1;
 }
 
 /*================================================================================
@@ -120,6 +121,7 @@ a {
 /*================================================================================
 =============| C O U N T D O W N |================================================
 ================================================================================*/
+
 .countDown-announcer {
     width: 100%;
     font-size: 1.1em;
@@ -184,15 +186,19 @@ a {
     margin-bottom: 50px;
 }
 
-.more-or-less {
-    height: 60px;
+.lvl-02-contain {
+    height: 140px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .lvl-02-try-counter {
-    font-size: var(--smallSize);
     margin-top: 15px;
+}
+
+#lvl-02-error {
+    font-size: var(--smallSize);
+    color: var(--alertColor);
 }
 
 .nope-txt {
@@ -202,12 +208,12 @@ a {
     animation: appearDisappear linear 4s;
 }
 
-.krypto {
+.lvl-01-krypto {
     width: 300px;
     margin-bottom: 50px;
 }
 
-.enigma {
+.lvl-03-enigma {
     width: 300px;
     margin-bottom: 50px;
 }

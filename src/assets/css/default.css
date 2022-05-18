@@ -214,8 +214,10 @@ a {
 }
 
 .lvl-03-enigma {
+    opacity: 0;
     width: 300px;
     margin-bottom: 50px;
+    animation: appearDisappear ease-in-out 8.5s;
 }
 
 /*================================================================================

@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
 
-         <link rel="icon" type="image/png" href="../assets/pics/tng-favicon.png">
+         <link rel="icon" type="image/png" href="/assets/pics/tng-favicon.png">
 
         <title>The Name Game | LVL-01</title>
 
@@ -29,15 +29,16 @@
 
             <div class="stuff-container">
 
-                <div class="center-contain-lvl-01">
+                
+<div class="center-contain-lvl-01">
     <h2 class="lvl-title">LVL-01</h2>
 
     <img class="krypto" src="/assets/pics/krypto-2.png" alt="enigma-01">
 
-    <form name="answer" method="POST" class="answer-form">
+    <form name="answer" method="POST" class="answer-form" id="form-lvl-01">
     <p>
         <label class="form-label answer-label">Votre Proposition:<br> 
-            <input class="form-input answer-input" type="text" name="proposition" required="required"/>
+            <input id="answer-input" class="form-input" type="text" name="proposition" required="required"/>
         </label> 
     </p>
 
@@ -52,7 +53,7 @@
         </div>
         
         <script src="/assets/js/script.js"></script>
-        <script src=""></script>  
+        <script src="/assets/js/lvl-01.js"></script>  
     </body>
 
 </html>

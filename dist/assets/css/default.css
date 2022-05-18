@@ -23,6 +23,12 @@
     100% {opacity:1;}
 }
 
+@keyframes appearDisappear {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
 /*================================================================================
 =============| G L O B A L |======================================================
 ================================================================================*/
@@ -189,6 +195,13 @@ a {
     margin-top: 15px;
 }
 
+.nope-txt {
+    opacity: 0;
+    font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
+    animation: appearDisappear linear 4s;
+}
+
 .krypto {
     width: 300px;
     margin-bottom: 50px;
@@ -213,6 +226,7 @@ a {
     font-family: var(--fontFamilly);
     letter-spacing: var(--letterSpacer);
     font-size: var(--regularSize);
+    text-transform: uppercase;
     width: 270px;
     margin-bottom: 50px;
     border: 1px var(--fontColor) solid;

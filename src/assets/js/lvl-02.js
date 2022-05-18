@@ -21,7 +21,7 @@
     let chosenNumber;
 
     let secretNumber = Math.floor(Math.random() * 100);
-    console.log(secretNumber);
+   
 
     /*___________________*/
     /*___| FUNCTIONS |___*/

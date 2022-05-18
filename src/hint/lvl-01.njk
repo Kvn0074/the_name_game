@@ -1,0 +1,23 @@
+---
+layout: layout.njk
+pageTitle: LVL-01
+pageScript: /assets/js/lvl-01.js
+---
+
+<div class="center-contain-lvl-01">
+    <h2 class="lvl-title">{{pageTitle}}</h2>
+
+    <img class="lvl-01-krypto" src="/assets/pics/krypto-2.png" alt="enigma-01">
+
+    <form name="answer" method="POST" class="answer-form" id="form-lvl-01">
+    <p>
+        <label class="form-label answer-label">Votre Proposition:<br> 
+            <input id="answer-input" class="form-input" type="text" name="proposition" required="required"/>
+        </label> 
+    </p>
+
+    <p>
+        <button class="button send-button" type="submit">Envoyez</button>
+    </p>
+    </form>
+</div>

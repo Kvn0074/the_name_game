@@ -1,0 +1,26 @@
+---
+layout: layout.njk
+pageTitle: LVL-FINALE
+pageScript: /assets/js/lvl-fnl.js
+---
+
+<div class="center-contain-lvl-fnl">
+    <h2 class="lvl-title">{{pageTitle}}</h2>
+    <p class="lvl-fnl-txt">Félicitations, vous etes venu à bout des étapes antérieur et vous voila face a l'ultime indice.
+        Encore un effort, votre quête touche à sa fin, mais vous devrez prouver votre valeur une ultime fois. On vous a donnez la clé. 
+        <br><br> Bonne chance...
+    </p>
+    <div class="lvl-fnl-hint">
+        {% include "last-hint.njk" %} 
+    </div>
+
+    <a href="{{'/form/' | url}}">
+        <div class="button fnl-prop">
+            <div class="btn-ctn">
+                <h2 class="btn-txt txt-prop">Faire une proposition</h2>
+            </div>
+        </div>
+    </a>
+
+    <div class="spacer"></div>
+</div>

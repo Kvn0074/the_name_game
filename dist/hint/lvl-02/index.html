@@ -19,7 +19,7 @@
 
          <link rel="icon" type="image/png" href="/assets/pics/tng-favicon.png">
 
-        <title>The Name Game | Thank you</title>
+        <title>The Name Game | LVL-02</title>
 
         <link rel="stylesheet" href="/assets/css/default.css">
     </head>
@@ -30,24 +30,36 @@
             <div class="stuff-container">
 
                 
-<p class="thank-txt">Merci pour votre participation, reponse en</P>
+<div class="center-contain-lvl-02">
+    <h2 class="lvl-title">LVL-02</h2>
 
-<h1 class="release-date">JUIN 2022</h1>
+    <p class="lvl-02-txt">trouvez le nombre secret entre 0 et 100</p>
+    <p class="lvl-02-try-counter">essais restant [ <span id="try-counter"></span> ]</p>
 
-<a href="https://www.google.fr/maps/@34.0907042,-118.3876729,3a,75y,266.31h,88.23t/data=!3m6!1e1!3m4!1sen2UMwkLN0kW6WLfWmqGwA!2e0!7i16384!8i8192">
-    <div class="button go-world">
-        <div class="btn-ctn">
-            <h2 class="btn-txt txt-go">Retour au monde</h2>
-        </div>
+    <div class="lvl-02-contain">
+        <p id="lvl-02-info"></p>
     </div>
-</a>
+    
+    <form name="answer" method="POST" class="answer-form" id="form-lvl-02">
+        <p>
+            <label class="form-label answer-label">Entrez votre nombre<br> 
+                <small id="lvl-02-error">Entrez un nombre</small>
+                <input class="form-input" id="answer-input" type="text" name="proposition" required="required"/>
+            </label> 
+        </p>
+
+        <p>
+            <button class="button send-button" type="submit">Jouez</button>
+        </p>
+    </form>
+</div>
 
             </div>
 
         </div>
         
         <script src="/assets/js/script.js"></script>
-        <script src=""></script>  
+        <script src="/assets/js/lvl-02.js"></script>  
     </body>
 
 </html>

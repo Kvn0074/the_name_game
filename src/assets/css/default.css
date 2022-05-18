@@ -10,8 +10,10 @@
    --regularSpacer : 5px;
    --smallSpacer   : 3px;
    --titleSize     : 2em;
+   --hintSize      : 1.6em;
    --regularSize   : 1.3em;
    --smallSize     : 0.7em;
+   --alertColor    : #ff30f1;
 }
 
 /*================================================================================
@@ -21,6 +23,12 @@
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+}
+
+@keyframes appearDisappear {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
 }
 
 /*================================================================================
@@ -49,14 +57,11 @@ a {
     color: var(--fontColor);
 }
 
-/*================================================================================
-=============| H O M E |==========================================================
-================================================================================*/
 .window {
     position: relative;
     height: 100vh;
     width: 100%;
-    animation: fadeIn linear 2s;
+    animation: fadeIn linear 3s;
 }
 .stuff-container {
     width: 310px;
@@ -67,6 +72,22 @@ a {
     top: 50%;
     margin-left: -147.5px;
     margin-top: -210px;
+}
+
+.spacer {
+    height: 50px;
+}
+
+/*================================================================================
+=============| H O M E |==========================================================
+================================================================================*/
+
+.center-contain-home {
+    margin-top: -100px;
+}
+
+.home-txt {
+    font-size: var(--regularSize);
 }
 
 .title {
@@ -80,7 +101,7 @@ a {
 ================================================================================*/
 
 .button {
-    width: 270px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -114,6 +135,7 @@ a {
 /*================================================================================
 =============| C O U N T D O W N |================================================
 ================================================================================*/
+
 .countDown-announcer {
     width: 100%;
     font-size: 1.1em;
@@ -162,6 +184,73 @@ a {
 }
 
 /*================================================================================
+=============| H I N T / L V L |==================================================
+================================================================================*/
+
+.center-contain-lvl-01,
+.center-contain-lvl-fnl {
+    margin-top: -230px;
+}
+.center-contain-lvl-02 {
+    margin-top: -100px;
+}
+
+.lvl-title {
+    font-size: var(--regularSize);
+    letter-spacing: var(--regularSpacer);
+    margin-bottom: 50px;
+}
+
+.lvl-01-krypto {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.lvl-02-contain {
+    height: 140px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lvl-02-try-counter {
+    margin-top: 15px;
+}
+
+#lvl-02-error {
+    font-size: var(--smallSize);
+    color: var(--alertColor);
+}
+
+.lvl-03-enigma {
+    opacity: 0;
+    width: 300px;
+    margin-bottom: 50px;
+    animation: appearDisappear ease-in-out 8.5s;
+}
+
+.lvl-fnl-hint-part {
+    margin: 15px;
+    font-size: var(--hintSize);
+    letter-spacing: var(--titleSpacer);
+}
+
+.lvl-fnl-hint {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fnl-prop {
+    margin-bottom: 50px;
+}
+
+.nope-txt {
+    opacity: 0;
+    font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
+    animation: appearDisappear linear 4s;
+}
+
+/*================================================================================
 =============| F O R M U L A R |==================================================
 ================================================================================*/
 
@@ -175,6 +264,7 @@ a {
     font-family: var(--fontFamilly);
     letter-spacing: var(--letterSpacer);
     font-size: var(--regularSize);
+    text-transform: uppercase;
     width: 270px;
     margin-bottom: 50px;
     border: 1px var(--fontColor) solid;

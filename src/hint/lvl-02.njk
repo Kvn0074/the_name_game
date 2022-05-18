@@ -1,0 +1,29 @@
+---
+layout: layout.njk
+pageTitle: LVL-02
+pageScript: /assets/js/lvl-02.js
+---
+
+<div class="center-contain-lvl-02">
+    <h2 class="lvl-title">{{pageTitle}}</h2>
+
+    <p class="lvl-02-txt">trouvez le nombre secret entre 0 et 100</p>
+    <p class="lvl-02-try-counter">essais restant [ <span id="try-counter"></span> ]</p>
+
+    <div class="lvl-02-contain">
+        <p id="lvl-02-info"></p>
+    </div>
+    
+    <form name="answer" method="POST" class="answer-form" id="form-lvl-02">
+        <p>
+            <label class="form-label answer-label">Entrez votre nombre<br> 
+                <small id="lvl-02-error">Entrez un nombre</small>
+                <input class="form-input" id="answer-input" type="text" name="proposition" required="required"/>
+            </label> 
+        </p>
+
+        <p>
+            <button class="button send-button" type="submit">Jouez</button>
+        </p>
+    </form>
+</div>

@@ -187,13 +187,13 @@ a {
 =============| H I N T / L V L |==================================================
 ================================================================================*/
 
-.center-contain-lvl-01,
+/*.center-contain-lvl-01,
 .center-contain-lvl-fnl {
     margin-top: -230px;
 }
 .center-contain-lvl-02 {
     margin-top: -100px;
-}
+}*/
 
 .lvl-title {
     font-size: var(--regularSize);

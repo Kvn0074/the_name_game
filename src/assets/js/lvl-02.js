@@ -21,8 +21,9 @@
     let chosenNumber;
 
     let secretNumber = Math.floor(Math.random() * 100);
-    console.log(secretNumber);
 
+    /*___________________*/
+    /*___| FUNCTIONS |___*/
 
     function loseRound (){
         instruction = document.createElement('p');
@@ -67,7 +68,11 @@
         }
 
         info.append(instruction);
-    }
+    } 
+
+    /*___________________*/
+    /*____| EVENTS |_____*/
+
 
     input.addEventListener('keyup', () => {
         if (isNaN(input.value)){
@@ -77,28 +82,23 @@
         }
     })
 
-    
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    /*___________________*/
-    /*____| EVENTS |_____*/
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    if (isNaN(input.value) || input.value == ""){
-        count --;
-        counter.textContent = count; 
-        input.value = "";
-        loseRound();
-    } else {
-        count --;
-        counter.textContent = count;
-        chosenNumber = input.value;
-        input.value = "";
-        checkNumber(chosenNumber);
-        checkCount(count, chosenNumber);
-    }    
-})
+        if (isNaN(input.value) || input.value == ""){
+            count --;
+            counter.textContent = count; 
+            input.value = "";
+            loseRound();
+        } else {
+            count --;
+            counter.textContent = count;
+            chosenNumber = input.value;
+            input.value = "";
+            checkNumber(chosenNumber);
+            checkCount(count, chosenNumber);
+        }    
+    })
 
 /*===============================================================*/
 /*==========| N O T H I N G  B E H I N D  T H I S |==============*/

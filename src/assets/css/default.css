@@ -10,6 +10,7 @@
    --regularSpacer : 5px;
    --smallSpacer   : 3px;
    --titleSize     : 2em;
+   --hintSize      : 1.6em;
    --regularSize   : 1.3em;
    --smallSize     : 0.7em;
    --alertColor    : #ff30f1;
@@ -54,6 +55,10 @@ a {
     text-decoration: none;
     text-transform: none;
     color: var(--fontColor);
+}
+
+.spacer {
+    height: 50px;
 }
 
 /*================================================================================
@@ -173,7 +178,8 @@ a {
 =============| H I N T / L V L |==================================================
 ================================================================================*/
 
-.center-contain-lvl-01 {
+.center-contain-lvl-01,
+.center-contain-lvl-fnl {
     margin-top: -230px;
 }
 .center-contain-lvl-02 {
@@ -183,6 +189,11 @@ a {
 .lvl-title {
     font-size: var(--regularSize);
     letter-spacing: var(--regularSpacer);
+    margin-bottom: 50px;
+}
+
+.lvl-01-krypto {
+    width: 300px;
     margin-bottom: 50px;
 }
 
@@ -201,23 +212,33 @@ a {
     color: var(--alertColor);
 }
 
-.nope-txt {
-    opacity: 0;
-    font-size: var(--titleSize);
-    letter-spacing: var(--titleSpacer);
-    animation: appearDisappear linear 4s;
-}
-
-.lvl-01-krypto {
-    width: 300px;
-    margin-bottom: 50px;
-}
-
 .lvl-03-enigma {
     opacity: 0;
     width: 300px;
     margin-bottom: 50px;
     animation: appearDisappear ease-in-out 8.5s;
+}
+
+.lvl-fnl-hint-part {
+    margin: 15px;
+    font-size: var(--hintSize);
+    letter-spacing: var(--titleSpacer);
+}
+
+.lvl-fnl-hint {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fnl-prop {
+    margin-bottom: 50px;
+}
+
+.nope-txt {
+    opacity: 0;
+    font-size: var(--titleSize);
+    letter-spacing: var(--titleSpacer);
+    animation: appearDisappear linear 4s;
 }
 
 /*================================================================================

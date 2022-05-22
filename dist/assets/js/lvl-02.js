@@ -7,7 +7,7 @@
 
     let container = document.querySelector('.lvl-02-contain');
     let counter = document.querySelector('#try-counter');
-    let count = 5;
+    let count = 4;
     counter.textContent = count;
 
     let input = document.querySelector('#answer-input');

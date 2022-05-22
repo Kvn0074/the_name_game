@@ -5,6 +5,7 @@
 :root {
    --fontColor     : white;  
    --backColor     : black;
+   --alertColor    : #ff30f1;
    --fontFamilly   : 'Cabin Sketch', cursive;
    --titleSpacer   : 10px;
    --regularSpacer : 5px;
@@ -13,7 +14,7 @@
    --hintSize      : 1.6em;
    --regularSize   : 1em;
    --smallSize     : 0.7em;
-   --alertColor    : #ff30f1;
+  
 }
 
 /*================================================================================
@@ -213,6 +214,10 @@ a {
 
 .lvl-02-try-counter {
     margin-top: 15px;
+}
+
+#try-counter {
+    color: var(--alertColor);
 }
 
 #lvl-02-error {

@@ -33,7 +33,6 @@
     }
 
     function checkCount (counter, number){
-        console.log("j'y passe");
         if (counter == 0 && number != secretNumber){
             instruction = document.createElement('p');
             instruction.textContent = "désolé, vous avez echoué" 
